@@ -67,10 +67,17 @@ export default {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-secondary': 'var(--gradient-secondary)',
 				'gradient-accent': 'var(--gradient-accent)',
+				'gradient-premium': 'var(--gradient-premium)',
+				'gradient-basic': 'var(--gradient-basic)',
 			},
 			boxShadow: {
 				'soft': 'var(--shadow-soft)',
 				'glow': 'var(--shadow-glow)',
+				'premium': 'var(--shadow-premium)',
+			},
+			transitionProperty: {
+				'smooth': 'var(--transition-smooth)',
+				'bounce': 'var(--bounce-effect)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

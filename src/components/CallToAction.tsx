@@ -1,108 +1,160 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Check, Gift } from "lucide-react";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Check, Gift, Star, Crown } from "lucide-react";
 
 const CallToAction = () => {
   return (
-    <section className="py-20 bg-background">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center space-y-4 mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
-            Comece Hoje a Jornada de Fé da Sua Família
+    <section className="py-20 bg-gradient-to-br from-background via-background to-muted/30">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center space-y-6 mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold text-foreground leading-tight">
+            Escolha o Kit Perfeito para Sua Família
           </h2>
-          <p className="text-xl text-muted-foreground">
-            Não perca mais tempo! Cada dia é uma oportunidade de plantar sementes 
-            de fé no coração dos seus filhos.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Transforme os momentos em família com nossos devocionais especiais. 
+            Comece hoje mesmo a plantar sementes de fé no coração dos seus filhos.
           </p>
         </div>
 
-        <Card className="border-none shadow-glow bg-gradient-secondary">
-          <CardContent className="p-8">
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
-              <div className="space-y-6">
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-foreground">
-                    Kit Completo Pequenos de Fé
-                  </h3>
-                  
-                  <div className="space-y-3">
-                    <div className="flex items-center space-x-3">
-                      <Check className="w-5 h-5 text-primary" />
-                      <span className="text-foreground">365 Devocionais Diários</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <Check className="w-5 h-5 text-primary" />
-                      <span className="text-foreground">50+ Desenhos para Colorir</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <Check className="w-5 h-5 text-primary" />
-                      <span className="text-foreground">Planner Familiar Completo</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <Check className="w-5 h-5 text-primary" />
-                      <span className="text-foreground">Guia para os Pais</span>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <Gift className="w-5 h-5 text-accent-foreground" />
-                      <span className="text-foreground font-semibold">Bônus: Playlist de Músicas Infantis Cristãs</span>
-                    </div>
-                  </div>
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* Kit Básico */}
+          <Card className="relative border-2 border-border bg-gradient-basic shadow-soft hover:shadow-glow transition-all duration-300">
+            <CardHeader className="text-center pb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-accent rounded-full mx-auto mb-4">
+                <Star className="w-8 h-8 text-accent-foreground" />
+              </div>
+              <h3 className="text-2xl font-bold text-foreground">Kit Básico</h3>
+              <p className="text-muted-foreground">Para começar a jornada</p>
+            </CardHeader>
+            <CardContent className="space-y-6">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-foreground">R$ 17,00</div>
+                <div className="text-sm text-muted-foreground">Pagamento único</div>
+              </div>
+              
+              <div className="space-y-3">
+                <div className="flex items-center space-x-3">
+                  <Check className="w-5 h-5 text-primary" />
+                  <span className="text-foreground">50+ Desenhos para Colorir</span>
                 </div>
-
-                <div className="space-y-4">
-                  <div className="text-center lg:text-left">
-                    <div className="text-3xl font-bold text-primary">R$ 47,00</div>
-                    <div className="text-sm text-muted-foreground">
-                      Menos de R$ 0,13 por dia de devocional
-                    </div>
-                  </div>
+                <div className="flex items-center space-x-3">
+                  <Check className="w-5 h-5 text-primary" />
+                  <span className="text-foreground">Histórias Bíblicas Ilustradas</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Check className="w-5 h-5 text-primary" />
+                  <span className="text-foreground">Guia Básico para Pais</span>
                 </div>
               </div>
 
-              <div className="space-y-6">
-                <div className="bg-background/80 backdrop-blur-sm rounded-xl p-6 space-y-4">
-                  <h4 className="text-lg font-semibold text-foreground text-center">
-                    🎁 Oferta Especial de Lançamento
-                  </h4>
-                  <p className="text-muted-foreground text-center text-sm">
-                    Garante seu kit com desconto especial por tempo limitado
-                  </p>
-                </div>
-
-                <div className="space-y-4">
-                  <Button variant="hero" size="lg" className="w-full text-lg py-4">
-                    Quero Meu Kit Completo
+              <div className="space-y-3 pt-4">
+                <a href="https://go.paradisepagbr.com/1bcq7je0pp" target="_blank" rel="noopener noreferrer">
+                  <Button variant="basic" size="lg" className="w-full">
+                    Quero o Kit Básico
                   </Button>
-                  <Button variant="outline" size="lg" className="w-full">
-                    Ver Exemplo Gratuito
-                  </Button>
-                </div>
+                </a>
+              </div>
 
-                <div className="text-center space-y-2">
-                  <p className="text-sm text-muted-foreground">
-                    ✅ Entrega imediata por email
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    ✅ Garantia de 30 dias
-                  </p>
-                  <p className="text-sm text-muted-foreground">
-                    ✅ Suporte completo
-                  </p>
-                </div>
+              <div className="text-center space-y-1 text-sm text-muted-foreground">
+                <p>✅ Entrega imediata</p>
+                <p>✅ Garantia de 30 dias</p>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Kit Completo - Premium */}
+          <Card className="relative border-2 border-primary bg-gradient-premium shadow-premium hover:shadow-premium hover:scale-105 transition-all duration-300 z-10">
+            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <div className="bg-gradient-primary text-primary-foreground px-6 py-2 rounded-full text-sm font-semibold shadow-glow">
+                🔥 MAIS POPULAR
               </div>
             </div>
-          </CardContent>
-        </Card>
+            
+            <CardHeader className="text-center pb-4 pt-8">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-accent rounded-full mx-auto mb-4">
+                <Crown className="w-8 h-8 text-yellow-600" />
+              </div>
+              <h3 className="text-2xl font-bold text-white">Kit Completo</h3>
+              <p className="text-white/90">Experiência completa para toda família</p>
+            </CardHeader>
+            
+            <CardContent className="space-y-6">
+              <div className="text-center">
+                <div className="text-4xl font-bold text-white">R$ 27,00</div>
+                <div className="text-sm text-white/80">Menos de R$ 0,08 por dia</div>
+                <div className="text-xs text-white/70 mt-1">
+                  <span className="line-through">R$ 47,00</span> • Desconto de 42%
+                </div>
+              </div>
+              
+              <div className="space-y-3">
+                <div className="flex items-center space-x-3">
+                  <Check className="w-5 h-5 text-yellow-300" />
+                  <span className="text-white">365 Devocionais Diários</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Check className="w-5 h-5 text-yellow-300" />
+                  <span className="text-white">50+ Desenhos para Colorir</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Check className="w-5 h-5 text-yellow-300" />
+                  <span className="text-white">Planner Familiar Completo</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Check className="w-5 h-5 text-yellow-300" />
+                  <span className="text-white">Guia Avançado para Pais</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Gift className="w-5 h-5 text-yellow-300" />
+                  <span className="text-white font-semibold">Bônus: Playlist de Músicas Cristãs</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Gift className="w-5 h-5 text-yellow-300" />
+                  <span className="text-white font-semibold">Bônus: Atividades Extras</span>
+                </div>
+              </div>
 
-        <div className="text-center mt-12 space-y-4">
-          <p className="text-muted-foreground">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
+                <p className="text-white/90 text-sm font-medium">
+                  🎁 Oferta Especial de Lançamento
+                </p>
+                <p className="text-white/70 text-xs mt-1">
+                  Por tempo limitado
+                </p>
+              </div>
+
+              <div className="space-y-3 pt-2">
+                <a href="https://go.paradisepagbr.com/hp6rdsvtdx" target="_blank" rel="noopener noreferrer">
+                  <Button variant="premium" size="lg" className="w-full text-lg py-4 bg-white text-purple-700 hover:bg-white/90 hover:text-purple-800 font-bold shadow-xl">
+                    🚀 Quero o Kit Completo
+                  </Button>
+                </a>
+                <Button variant="outline" size="lg" className="w-full border-white/30 text-white hover:bg-white/10">
+                  Ver Exemplo Gratuito
+                </Button>
+              </div>
+
+              <div className="text-center space-y-1 text-sm text-white/80">
+                <p>✅ Entrega imediata por email</p>
+                <p>✅ Garantia de 30 dias</p>
+                <p>✅ Suporte completo</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="text-center mt-16 space-y-6">
+          <p className="text-muted-foreground text-lg">
             Mais de 1.000 famílias já estão transformando seus momentos em família
           </p>
           <div className="flex justify-center space-x-1">
             {[...Array(5)].map((_, i) => (
-              <div key={i} className="w-5 h-5 text-yellow-400">⭐</div>
+              <Star key={i} className="w-6 h-6 text-yellow-400 fill-current" />
             ))}
           </div>
+          <p className="text-sm text-muted-foreground">
+            Avaliação 4.9/5 baseada em mais de 500 reviews
+          </p>
         </div>
       </div>
     </section>
