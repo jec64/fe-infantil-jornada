@@ -18,9 +18,6 @@ const Header = () => {
             <a href="#beneficios" className="text-muted-foreground hover:text-foreground transition-colors">
               Benefícios
             </a>
-            <a href="#contato" className="text-muted-foreground hover:text-foreground transition-colors">
-              Contato
-            </a>
           </nav>
 
           <Button variant="hero" size="sm">

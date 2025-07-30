@@ -125,13 +125,10 @@ const CallToAction = () => {
 
               <div className="space-y-3 pt-2">
                 <a href="https://go.paradisepagbr.com/hp6rdsvtdx" target="_blank" rel="noopener noreferrer">
-                  <Button variant="premium" size="lg" className="w-full text-lg py-4 bg-white text-purple-700 hover:bg-white/90 hover:text-purple-800 font-bold shadow-xl">
+                  <Button variant="premium" size="lg" className="w-full text-lg py-4 bg-white text-green-700 hover:bg-white/90 hover:text-green-800 font-bold shadow-xl">
                     🚀 Quero o Kit Completo
                   </Button>
                 </a>
-                <Button variant="outline" size="lg" className="w-full border-white/30 text-white hover:bg-white/10">
-                  Ver Exemplo Gratuito
-                </Button>
               </div>
 
               <div className="text-center space-y-1 text-sm text-white/80">

@@ -36,7 +36,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-primary-foreground/80">
-            © 2024 Pequenos de Fé. Todos os direitos reservados.
+            © 2025 Pequenos de Fé. Todos os direitos reservados.
           </p>
         </div>
       </div>
