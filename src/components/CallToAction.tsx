@@ -57,7 +57,7 @@ const CallToAction = () => {
 
               <div className="text-center space-y-1 text-sm text-muted-foreground">
                 <p>✅ Entrega imediata</p>
-                <p>✅ Garantia de 30 dias</p>
+                <p>✅ Garantia de 7 dias</p>
               </div>
             </CardContent>
           </Card>
@@ -133,7 +133,7 @@ const CallToAction = () => {
 
               <div className="text-center space-y-1 text-sm text-white/80">
                 <p>✅ Entrega imediata por email</p>
-                <p>✅ Garantia de 30 dias</p>
+                <p>✅ Garantia de 7 dias</p>
                 <p>✅ Suporte completo</p>
               </div>
             </CardContent>
@@ -142,7 +142,7 @@ const CallToAction = () => {
 
         <div className="text-center mt-16 space-y-6">
           <p className="text-muted-foreground text-lg">
-            Mais de 1.000 famílias já estão transformando seus momentos em família
+            Mais de 1.900 famílias já estão transformando seus momentos em família
           </p>
           <div className="flex justify-center space-x-1">
             {[...Array(5)].map((_, i) => (
@@ -150,7 +150,7 @@ const CallToAction = () => {
             ))}
           </div>
           <p className="text-sm text-muted-foreground">
-            Avaliação 4.9/5 baseada em mais de 500 reviews
+            Avaliação 4.9/5 baseada em mais de 780 reviews
           </p>
         </div>
       </div>
